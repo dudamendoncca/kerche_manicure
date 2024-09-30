@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livia Kerche - Manicure</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="icon" href="./images/logo1.png" type="image/png"> -->
+</head>
+
+
+<body>
+
+    <!-- Header com banner -->
+    <header class="bg-cover bg-center text-white py-28" style="background-image: url('images/wallpaper.png');">
+        <div class="container mx-auto text-center">
+            <h1 class="md:text-6xl text-5xl font-bold font-dancing-script text-shadoww">Livia Kerche</h1>
+            <p class="text-lg font-bold text-shadoww">Serviços de Manicure e Sobrancelhas</p>
+            <!-- Frase Inspiradora -->
+            <p class="text-xl italic mt-6 text-white text-shadoww">"Beleza é sobre se sentir confiante e brilhar de
+                dentro para fora."</p>
+        </div>
+    </header>
+
+    <!-- Seção de Endereço -->
+    <div class="flex flex-col sm:flex-row items-center justify-between bg-gray-100 p-4 rounded-b-lg shadow-md">
+        <div class="flex flex-col sm:flex-row items-center">
+            <div class="flex items-center">
+                <i class="fas fa-map-marker-alt text-green-600 mr-2"></i>
+                <a href="https://www.google.com/maps?q=Av.+Rui+Barbosa,+1007+-+Agudos,+SP" target="_blank"
+                    class="border border-green-500 text-gray-700 px-2 py-1 rounded hover:bg-green-100 transition duration-300">
+                    <span>Av. Rui Barbosa, 1007 - Agudos, SP</span>
+                </a>
+            </div>
+            <span class="mt-2 sm:ml-2 sm:flex items-center text-sm font-semibold sm:mt-0">
+                <!-- Seta para dispositivos pequenos -->
+                <i class="fas fa-arrow-up sm:hidden mr-1"></i>
+                <!-- Seta para dispositivos médios e maiores -->
+                <i class="fas fa-arrow-left hidden sm:block mr-1"></i>
+                Abrir Maps
+            </span>
+        </div>
+        <div class="flex items-center mt-2 sm:mt-0">
+            <!-- Links para redes sociais -->
+            <a href="https://wa.me/14981761595" class="text-gray-700 hover:text-green-600 mx-3">
+                <i class="fab fa-whatsapp text-2xl"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100075722185322&mibextid=LQQJ4d"
+                class="text-gray-700 hover:text-blue-600 mx-3">
+                <i class="fab fa-facebook text-2xl"></i>
+            </a>
+            <a href="https://www.instagram.com/kerche_manicure?igsh=MWVrZ3IwMjB1dnB1Nw=="
+                class="text-gray-700 hover:text-pink-600 mx-3">
+                <i class="fab fa-instagram text-2xl"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Seção de Alongamentos -->
+    <section class="py-16">
+        <div class="container mx-auto max-w-screen-xl">
+            <h2 class="text-center text-3xl font-playfair mb-16 text-gray-800">Alongamentos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
+                <!-- Serviço: -->
+                <div class="bg-white rounded-lg shadow-md flex flex-col">
+                    <img src="images/imagem16.jpeg" alt="Alongamento com Esmaltação em Gel"
+                        class="w-full h-52 object-cover rounded-t-lg">
+                    <div class="px-8 pt-8 flex-grow"> <!-- Flex-grow para ocupar o espaço disponível -->
+                        <h3 class="text-xl font-playfair text-gray-800 mb-4">Alongamento com Esmaltação em Gel</h3>
+                        <p class="text-green-600 font-bold text-lg mb-4">R$ 150,00</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-white rounded-lg shadow-md">
+                        <button class="add-to-cart flex-1 py-2 px-4 text-white bg-black button:hover focus:outline-none"
+                            data-name="Alongamento com Esmaltação em Gel" data-price="150">
+                            <i class="fas fa-shopping-cart mr-2"></i> Agendar
+                        </button>
+
+                        <div class="w-[1px] h-full bg-white"></div>
+
+                        <button
+                            class="remove-from-cart flex-1 py-2 px-4 text-white bg-black hover:bg-red-600 focus:outline-none"
+                            data-name="Alongamento com Esmaltação em Gel" data-price="150">
+                            <i class="fas fa-times mr-2"></i> Remover
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Serviço: -->
+                <div class="bg-white rounded-lg shadow-md flex flex-col">
+                    <img src="images/imagem12.jpeg" alt="Esmaltação em Gel"
+                        class="w-full h-52 object-cover rounded-t-lg">
+                    <div class="px-8 pt-8 flex-grow"> <!-- Flex-grow para ocupar o espaço disponível -->
+                        <h3 class="text-xl font-playfair text-gray-800 mb-10">Esmaltação em Gel</h3>
+                        <p class="text-green-600 font-bold text-lg mb-4">R$ 55,00</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-white rounded-lg shadow-md">
+                        <button class="add-to-cart flex-1 py-2 px-4 text-white bg-black button:hover focus:outline-none"
+                            data-name="Esmaltação em Gel" data-price="55">
+                            <i class="fas fa-shopping-cart mr-2"></i> Agendar
+                        </button>
+
+                        <div class="w-[1px] h-full bg-white"></div>
+
+                        <button
+                            class="remove-from-cart flex-1 py-2 px-4 text-white bg-black hover:bg-red-600 focus:outline-none"
+                            data-name="Esmaltação em Gel" data-price="55">
+                            <i class="fas fa-times mr-2"></i> Remover
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Serviço: -->
+                <div class="bg-white rounded-lg shadow-md flex flex-col">
+                    <img src="images/imagem22.jpeg" alt="Pacote 4 mãos e 2 pés"
+                        class="w-full h-52 object-cover rounded-t-lg">
+                    <div class="px-8 pt-8 flex-grow"> <!-- Flex-grow para ocupar o espaço disponível -->
+                        <h3 class="text-xl font-playfair text-gray-800 mb-10">Pacote 4 mãos e 2 pés</h3>
+                        <p class="text-red-600 font-bold text-lg mb-4">R$ 150,00</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-white rounded-lg shadow-md">
+                        <button class="add-to-cart flex-1 py-2 px-4 text-white bg-black button:hover focus:outline-none"
+                            data-name="Pacote 4 mãos e 2 pés" data-price="150">
+                            <i class="fas fa-shopping-cart mr-2"></i> Agendar
+                        </button>
+
+                        <div class="w-[1px] h-full bg-white"></div>
+
+                        <button
+                            class="remove-from-cart flex-1 py-2 px-4 text-white bg-black hover:bg-red-600 focus:outline-none"
+                            data-name="Pacote 4 mãos e 2 pés" data-price="150">
+                            <i class="fas fa-times mr-2"></i> Remover
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Sobrancelhas -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto max-w-screen-xl">
+            <h2 class="text-center text-3xl font-playfair mb-16 text-gray-800">Designer de Sobrancelhas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
+                <!-- Serviço: -->
+                <div class="bg-white rounded-lg shadow-md flex flex-col">
+                    <img src="images/imagem2.jpeg" alt="Designer de Sobrancelha"
+                        class="w-full h-52 object-cover rounded-t-lg">
+                    <div class="px-8 pt-8 flex-grow"> <!-- Flex-grow para ocupar o espaço disponível -->
+                        <h3 class="text-xl font-playfair text-gray-800 mb-10">Designer de Sobrancelha</h3>
+                        <p class="text-green-600 font-bold text-lg mb-4">R$ 20,00</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-white rounded-lg shadow-md">
+                        <button class="add-to-cart flex-1 py-2 px-4 text-white bg-black button:hover focus:outline-none"
+                            data-name="Designer de Sobrancelha" data-price="20">
+                            <i class="fas fa-shopping-cart mr-2"></i> Agendar
+                        </button>
+
+                        <div class="w-[1px] h-full bg-white"></div>
+
+                        <button
+                            class="remove-from-cart flex-1 py-2 px-4 text-white bg-black hover:bg-red-600 focus:outline-none"
+                            data-name="Designer de Sobrancelha" data-price="20">
+                            <i class="fas fa-times mr-2"></i> Remover
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Serviço: -->
+                <div class="bg-white rounded-lg shadow-md flex flex-col">
+                    <img src="images/imagem2.jpeg" alt="Designer de Sobrancelha com Henna"
+                        class="w-full h-52 object-cover rounded-t-lg">
+                    <div class="px-8 pt-8 flex-grow"> <!-- Flex-grow para ocupar o espaço disponível -->
+                        <h3 class="text-xl font-playfair text-gray-800 mb-4">Designer de Sobrancelha com Henna</h3>
+                        <p class="text-green-600 font-bold text-lg mb-4">R$ 40,00</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-white rounded-lg shadow-md">
+                        <button class="add-to-cart flex-1 py-2 px-4 text-white bg-black button:hover focus:outline-none"
+                            data-name="Designer de Sobrancelha com Henna" data-price="40">
+                            <i class="fas fa-shopping-cart mr-2"></i> Agendar
+                        </button>
+
+                        <div class="w-[1px] h-full bg-white"></div>
+
+                        <button
+                            class="remove-from-cart flex-1 py-2 px-4 text-white bg-black hover:bg-red-600 focus:outline-none"
+                            data-name="Designer de Sobrancelha com Henna" data-price="40">
+                            <i class="fas fa-times mr-2"></i> Remover
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seção de Esmaltação -->
+    <section class="py-16">
+        <div class="container mx-auto max-w-screen-xl">
+            <h2 class="text-center text-3xl font-playfair mb-16 text-gray-800">Esmaltação</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
+                <!-- Serviço: -->
+                <div class="bg-white rounded-lg shadow-md flex flex-col">
+                    <img src="images/imagem5.jpeg" alt="Pé" class="w-full h-52 object-cover rounded-t-lg">
+                    <div class="px-8 pt-8 flex-grow"> <!-- Flex-grow para ocupar o espaço disponível -->
+                        <h3 class="text-xl font-playfair text-gray-800 mb-10">Pé</h3>
+                        <p class="text-green-600 font-bold text-lg mb-4">R$ 30,00</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-white rounded-lg shadow-md">
+                        <button class="add-to-cart flex-1 py-2 px-4 text-white bg-black button:hover focus:outline-none"
+                            data-name="Pé" data-price="30">
+                            <i class="fas fa-shopping-cart mr-2"></i> Agendar
+                        </button>
+
+                        <div class="w-[1px] h-full bg-white"></div>
+
+                        <button
+                            class="remove-from-cart flex-1 py-2 px-4 text-white bg-black hover:bg-red-600 focus:outline-none"
+                            data-name="Pé" data-price="30">
+                            <i class="fas fa-times mr-2"></i> Remover
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Serviço: -->
+                <div class="bg-white rounded-lg shadow-md flex flex-col">
+                    <img src="images/imagem11.jpeg" alt="Pé e Mão" class="w-full h-52 object-cover rounded-t-lg">
+                    <div class="px-8 pt-8 flex-grow"> <!-- Flex-grow para ocupar o espaço disponível -->
+                        <h3 class="text-xl font-playfair text-gray-800 mb-10">Pé e Mão</h3>
+                        <p class="text-red-600 font-bold text-lg mb-4">R$ 55,00</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-white rounded-lg shadow-md">
+                        <button class="add-to-cart flex-1 py-2 px-4 text-white bg-black button:hover focus:outline-none"
+                            data-name="Pé e Mão" data-price="55">
+                            <i class="fas fa-shopping-cart mr-2"></i> Agendar
+                        </button>
+
+                        <div class="w-[1px] h-full bg-white"></div>
+
+                        <button
+                            class="remove-from-cart flex-1 py-2 px-4 text-white bg-black hover:bg-red-600 focus:outline-none"
+                            data-name="Pé e Mão" data-price="55">
+                            <i class="fas fa-times mr-2"></i> Remover
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Serviço: -->
+                <div class="bg-white rounded-lg shadow-md flex flex-col">
+                    <img src="images/imagem21.jpeg" alt="Mão" class="w-full h-52 object-cover rounded-t-lg">
+                    <div class="px-8 pt-8 flex-grow"> <!-- Flex-grow para ocupar o espaço disponível -->
+                        <h3 class="text-xl font-playfair text-gray-800 mb-10">Mão</h3>
+                        <p class="text-green-600 font-bold text-lg mb-4">R$ 30,00</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-white rounded-lg shadow-md">
+                        <button class="add-to-cart flex-1 py-2 px-4 text-white bg-black button:hover focus:outline-none"
+                            data-name="Mão" data-price="30">
+                            <i class="fas fa-shopping-cart mr-2"></i> Agendar
+                        </button>
+
+                        <div class="w-[1px] h-full bg-white"></div>
+
+                        <button
+                            class="remove-from-cart flex-1 py-2 px-4 text-white bg-black hover:bg-red-600 focus:outline-none"
+                            data-name="Mão" data-price="30">
+                            <i class="fas fa-times mr-2"></i> Remover
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Unhas Decoradas -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto max-w-screen-xl">
+            <h2 class="text-center text-3xl font-playfair mb-16 text-gray-800">Unhas Decoradas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
+                <!-- Serviço: -->
+                <div class="bg-white rounded-lg shadow-md flex flex-col">
+                    <img src="images/imagem19.jpeg" alt="Mão" class="w-full h-52 object-cover rounded-t-lg">
+                    <div class="px-8 pt-8 flex-grow"> <!-- Flex-grow para ocupar o espaço disponível -->
+                        <h3 class="text-xl font-playfair text-gray-800 mb-10">Mão</h3>
+                        <p class="text-green-600 font-bold text-lg mb-4">R$ 30,00</p>
+                    </div>
+                    <div class="flex items-center justify-center bg-white rounded-lg shadow-md">
+                        <button class="add-to-cart flex-1 py-2 px-4 text-white bg-black button:hover focus:outline-none"
+                            data-name="Mão" data-price="30">
+                            <i class="fas fa-shopping-cart mr-2"></i> Agendar
+                        </button>
+
+                        <div class="w-[1px] h-full bg-white"></div>
+
+                        <button
+                            class="remove-from-cart flex-1 py-2 px-4 text-white bg-black hover:bg-red-600 focus:outline-none"
+                            data-name="Mão" data-price="30">
+                            <i class="fas fa-times mr-2"></i> Remover
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Trabalhos -->
+    <section class="container mx-auto max-w-screen-xl py-16 mb-16">
+        <h2 class="text-center text-3xl font-playfair mb-16 text-gray-800 mt-16">Galeria</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <img src="images/imagem1.jpeg" alt="Descrição da Imagem 1"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem2.jpeg" alt="Descrição da Imagem 2"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem3.jpeg" alt="Descrição da Imagem 3"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem4.jpeg" alt="Descrição da Imagem 4"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem5.jpeg" alt="Descrição da Imagem 5"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem6.jpeg" alt="Descrição da Imagem 6"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem8.jpeg" alt="Descrição da Imagem 8"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem9.jpeg" alt="Descrição da Imagem 9"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem10.jpeg" alt="Descrição da Imagem 10"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem11.jpeg" alt="Descrição da Imagem 11"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem12.jpeg" alt="Descrição da Imagem 12"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem13.jpeg" alt="Descrição da Imagem 13"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem14.jpeg" alt="Descrição da Imagem 14"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem15.jpeg" alt="Descrição da Imagem 15"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem16.jpeg" alt="Descrição da Imagem 16"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem17.jpeg" alt="Descrição da Imagem 17"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem18.jpeg" alt="Descrição da Imagem 18"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem19.jpeg" alt="Descrição da Imagem 19"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem20.jpeg" alt="Descrição da Imagem 20"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem21.jpeg" alt="Descrição da Imagem 21"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem22.jpeg" alt="Descrição da Imagem 22"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem23.jpeg" alt="Descrição da Imagem 23"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem24.jpeg" alt="Descrição da Imagem 24"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem26.jpeg" alt="Descrição da Imagem 26"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+            <img src="images/imagem27.jpeg" alt="Descrição da Imagem 27"
+                class="w-full h-60 object-cover rounded-lg shadow-md">
+        </div>
+    </section>
+
+
+    <!-- Botão para finalizar agendamento fixo no rodapé -->
+    <button id="finalizar-agendamento"
+        class="fixed bottom-0 left-0 right-0 bg-green-600 text-white py-4 text-lg text-center">
+        Finalizar Agendamento
+    </button>
+
+    <!-- Seção de Contato e Rodapé Integrado -->
+    <section class="py-16 bg-white section-title">
+        <div class="container mx-auto max-w-screen-xl text-center">
+            <h2 class="section-title text-center text-2xl sm:text-3xl">Contato</h2>
+            <p class="text-lg text-gray-800 mb-8">Para mais informações ou agendamentoe em contato conosco.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center mb-8">
+                <a href="tel:+5514981761595"
+                    class="bg-green-600 text-white py-2 px-4 rounded-full mb-4 md:mb-0 md:mr-4 hover:bg-green-700 transition text-sm border border-green-600">
+                    <i class="fas fa-phone-alt mr-2"></i> (14) 98176-1595
+                </a>
+                <a href="https://wa.me/5514981761595?text=Gostaria%20de%20mais%20informações%20sobre%20os%20serviços."
+                    target="_blank"
+                    class="bg-green-600 text-white py-2 px-4 rounded-full hover:bg-green-700 transition text-sm border border-green-600">
+                    <i class="fab fa-whatsapp mr-2"></i> Enviar Mensagem
+                </a>
+            </div>
+            <footer class="text-gray-600 text-sm">
+                <p>&copy; 2024 Livia's Beauty Studio. Todos os direitos reservados.</p>
+            </footer>
+        </div>
+    </section>
+
+    <div id="payment-notification" class="notification hidden">
+        <p>Opções de pagamento: Crédito, Débito e PIX</p>
+        <button onclick="closeNotification()">Fechar</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script>
+        let cart = [];
+
+        // Adiciona item ao carrinho
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const name = button.getAttribute('data-name');
+                const price = parseFloat(button.getAttribute('data-price'));
+                // Verifica se o item já está no carrinho
+                const existingItem = cart.find(item => item.name === name);
+                if (existingItem) {
+                    // Se o item já estiver no carrinho, não adiciona duplicado
+                    alert(`Serviço ${name} já está no carrinho.`);
+                } else {
+                    cart.push({ name, price });
+                    alert(`Serviço ${name} adicionado ao carrinho.`);
+                }
+            });
+        });
+
+        // Remove item do carrinho
+        document.querySelectorAll('.remove-from-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const name = button.getAttribute('data-name');
+                const price = parseFloat(button.getAttribute('data-price'));
+                // Remove o item do carrinho, se ele existir
+                cart = cart.filter(item => !(item.name === name && item.price === price));
+                alert(`Serviço ${name} removido do carrinho.`);
+            });
+        });
+
+        document.getElementById('finalizar-agendamento').addEventListener('click', () => {
+            if (cart.length === 0) {
+                alert('Por favor, adicione pelo menos um serviço ao carrinho.');
+                return;
+            }
+
+            let total = cart.reduce((sum, item) => sum + item.price, 0);
+            let message = 'Gostaria de agendar os seguintes serviços:\n\n';
+            cart.forEach(item => {
+                message += `${item.name}: R$ ${item.price.toFixed(2)}\n`;
+            });
+            message += `\nTotal: R$ ${total.toFixed(2)}`;
+
+            // Envia a mensagem para o WhatsApp
+            const whatsappUrl = `https://wa.me/5514981761595?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        });
+
+
+    </script>
+
+    <script>
+        window.onload = function () {
+            const notification = document.getElementById('payment-notification');
+            notification.classList.remove('hidden');
+        };
+
+        function closeNotification() {
+            const notification = document.getElementById('payment-notification');
+            notification.classList.add('hidden');
+        }
+    </script>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            const newIndex = (index + totalSlides) % totalSlides;
+            const offset = -100 * newIndex;
+            document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+            currentIndex = newIndex;
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+    </script>
+</body>
+
+</html>
